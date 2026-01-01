@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BarChart3, Users, TrendingUp, Shield, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   useEffect(() => {
@@ -35,15 +36,14 @@ const Hero = () => {
         data-aos="fade-up"
         data-aos-delay="400"
       >
-        <button className="bg-gray-700 hover:bg-gray-800 text-white px-6 sm:px-8 md:px-10 lg:px-12 py-3 rounded-lg transition-all duration-200 hover:scale-105">
-          Get Started
-        </button>
-        <button className="border-2 border-gray-700 text-gray-700 hover:bg-gray-50 px-6 sm:px-8 md:px-10 lg:px-12 py-3 rounded-lg transition-all duration-200 hover:scale-105">
-          Learn More
-        </button>
+        <Link to="/register">
+          <button className="bg-gray-700 hover:bg-gray-800 text-white px-6 sm:px-8 md:px-10 lg:px-12 py-3 rounded-lg transition-all duration-200 hover:scale-105">
+            Get Started
+          </button>
+        </Link>
       </div>
 
-      <div className="relative py-16 mt-8 min-h-screen px-4 sm:px-6 md:px-10 lg:px-15 bg-linear-to-b from-gray-900 via-gray-900 to-black rounded-t-[200px] flex flex-col items-center justify-start">
+      <div className="relative py-16 mt-8 min-h-screen px-4 sm:px-6 md:px-10 lg:px-15 bg-linear-to-b from-gray-900 via-gray-900 to-black rounded-t-[50px] md:rounded-t-[200px] flex flex-col items-center justify-start">
         <div className="text-center mt-8 mb-12" data-aos="fade-down">
           <h2 className="text-white text-3xl font-semibold mb-4">
             See It In Action

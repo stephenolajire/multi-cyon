@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const DesktopNavigation: React.FC = () => {
   const NavLinks = [
@@ -31,9 +31,11 @@ const DesktopNavigation: React.FC = () => {
           ))}
         </ul>
         <div>
-          <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-600 transition duration-300">
-            Register
-          </button>
+          <Link to="/register">
+            <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-600 transition duration-300">
+              Register
+            </button>
+          </Link>
         </div>
       </nav>
     </header>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const MobileNavigation: React.FC = () => {
@@ -89,12 +89,14 @@ const MobileNavigation: React.FC = () => {
 
           {/* Register Button */}
           <div className="p-6 border-t border-gray-200">
-            <button
-              onClick={closeMenu}
-              className="w-full bg-black text-white px-4 py-3 rounded-md hover:bg-gray-700 transition duration-300 font-medium"
-            >
-              Register
-            </button>
+            <Link to="/register">
+              <button
+                onClick={closeMenu}
+                className="w-full bg-black text-white px-4 py-3 rounded-md hover:bg-gray-700 transition duration-300 font-medium"
+              >
+                Register
+              </button>
+            </Link>
           </div>
         </div>
       </div>
