@@ -116,7 +116,7 @@ const Sidebar = () => {
       {/* Mobile Menu Button */}
       <button
         onClick={toggleSidebar}
-        className="lg:hidden fixed top-4 right-4 z-50 bg-white p-2 rounded-lg border border-church-sec shadow-lg hover:bg-gray-50 transition-colors"
+        className="lg:hidden fixed top-4 right-4 z-50 rounded-lg border border-church-sec shadow-lg hover:bg-gray-50 transition-colors"
         aria-label="Toggle menu"
       >
         {isOpen ? (
